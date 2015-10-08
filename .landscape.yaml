@@ -1,6 +1,8 @@
+#https://docs.landscape.io/configuration.html
+
 strictness: medium
 
-autodetect: false
+autodetect: true
 
 #max-line-length depend strictness (80 for very high, 100 for high, 160 for medium and below)
 max-line-length: 160
@@ -8,14 +10,18 @@ max-line-length: 160
 requirements:
   - requirements.txt
     
-#doc-warnings: yes
-#test-warnings: no    
+doc-warnings: yes
+test-warnings: yes
+
+pep8:
+  full: true    
     
 ignore-paths:
-  - documentation/
-  - config/
+  - documentation
+  - config
   - os_specific
-  - dlstats/tests/
+  - dlstats/tests
+  - resources
   
 ignore-patterns:
   - ^.*\.yml$
