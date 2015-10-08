@@ -1,0 +1,29 @@
+strictness: medium
+
+autodetect: false
+
+#max-line-length depend strictness (80 for very high, 100 for high, 160 for medium and below)
+max-line-length: 160
+
+requirements:
+  - requirements.txt
+    
+#doc-warnings: yes
+#test-warnings: no    
+    
+ignore-paths:
+  - documentation/
+  - config/
+  - os_specific
+  - dlstats/tests/
+  
+ignore-patterns:
+  - ^.*\.yml$
+  
+pep8:
+  disable:
+    #- E1002
+    #- E226
+    #- W293
+    #- E302
+    #- E41
